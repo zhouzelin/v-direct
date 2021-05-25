@@ -1,4 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import Vue from 'vue'
+import app from './App.vue'
+import zery from './index'
 
-createApp(App).mount('#app')
+Vue.use(zery)
+
+new Vue({
+  el: '#app',
+  render: h => h(app)
+})

@@ -19,7 +19,7 @@ const copy = {
 }
 
 const handler = () => {
-  if ($value) {
+  if (!$value) {
     $empty()
     return
   }
