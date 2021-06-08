@@ -1,16 +1,16 @@
 const draggable = {
-  inserted(el) {
+  inserted(el, binding) {
     el.style.cursor = 'move'
-    el.style.position = 'absolute'
+    el.style.position = binding.arg || 'absolute'
     el.style.userSelect = 'none'
     el.onmousedown = e => {
-      let disx = el.clientX - el.offsetLeft
-      let disy = el.clientY - el.offsetTop
+      let disx = e.clientX - el.offsetLeft
+      let disy = e.clientY - el.offsetTop
       document.onmousemove = e => {
-        let x = el.clientX - disx
-        let y = el.clientY - disy
-        let maxX = document.body.clientWidth - parseInt(e.clientWidth)
-        let maxY = document.body.clientHeight - parseInt(e.clientHeight)
+        let x = e.clientX - disx
+        let y = e.clientY - disy
+        let maxX = document.body.clientWidth - parseInt(el.clientWidth)
+        let maxY = document.body.clientHeight - parseInt(el.clientHeight)
         if (x < 0) {
           x = 0
         } else if (x > maxX) {
