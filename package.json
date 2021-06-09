@@ -1,15 +1,20 @@
 {
   "name": "vue-directive-zery",
   "version": "0.0.0",
-  "author": "zhouzelin 759005093@qq.com",
+  "author": "zhouzelin zhouzelinman@qq.com",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "dist": "node build/entry.js"
+    "dist": "node build/entry.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "vue": "^2.6.12"
+    "vue": "^2.6.14"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.2",
@@ -17,6 +22,8 @@
     "json-templater": "^1.2.0",
     "uppercamelcase": "^3.0.0",
     "vite": "^2.3.3",
-    "vite-plugin-vue2": "^1.5.1"
+    "vite-plugin-vue2": "^1.5.1",
+    "vue-template-compiler": "^2.6.14",
+    "vuepress": "^1.8.2"
   }
 }

@@ -25,7 +25,7 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: resolve('src/directives/index.js'),
+      entry: resolve('src/index.js'),
       name: 'vue-directive-zery'
     },
     rollupOptions: {
