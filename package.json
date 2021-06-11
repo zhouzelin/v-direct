@@ -1,9 +1,10 @@
 {
   "name": "vue-directive-zery",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "zhouzelin zhouzelinman@qq.com",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "dev": "vite",
