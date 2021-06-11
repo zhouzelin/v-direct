@@ -64,3 +64,9 @@ export default {
   }
 }
 </script>
+
+## 防止冲突，按需加载
+```javascript
+zery.use(['watermarker', 'copy', 'longpress'])
+Vue.use(zery)
+```

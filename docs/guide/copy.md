@@ -1,22 +1,3 @@
-<script>
-import Vue from 'vue'
-import zery from '@/index.js'
-Vue.use(zery)
-
-export default {
-  data() {
-    return {
-      content: 'Hello Zery!'
-    }
-  },
-  methods: {
-    success(val) {
-      alert('复制成功，内容为：' + val)
-    }
-  }
-}
-</script>
-
 # 复制文本 copy
 绑定该指令，点击元素才能实现复制功能
 
@@ -59,3 +40,19 @@ export default {
 |text|复制文本内容|String|是|
 |success|执行成功回调函数，接收一个text参数, text为复制文本内容|Function|否|
 |empty|复制文本为空值时触发的回调函数，接收一个text参数, text为复制文本内容|Function|否|
+
+
+<script>
+export default {
+  data() {
+    return {
+      content: 'Hello Zery!'
+    }
+  },
+  methods: {
+    success(val) {
+      alert('复制成功，内容为：' + val)
+    }
+  }
+}
+</script>

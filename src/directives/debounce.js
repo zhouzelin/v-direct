@@ -1,11 +1,11 @@
 // 防抖
 let timer, handler
 
-const handlerClick = () => {
+const handlerClick = (e) => {
   if (timer) {
     clearTimeout(timer)
   }
-  timer = setTimeout(handler, 1000)
+  timer = setTimeout(() => handler(e), 320)
 }
 
 const debounce = {

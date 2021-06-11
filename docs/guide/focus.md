@@ -1,11 +1,3 @@
-<script>
-import Vue from 'vue'
-import zery from '@/index.js'
-Vue.use(zery)
-
-export default {}
-</script>
-
 # 获取焦点 focus
 1. 给input或textarea添加该指令，页面加载完成时，会给该控件获取焦点的效果
 2. 给最外层的元素添加该指令，会给该元素的第一个input/textarea子元素获取焦点效果
@@ -13,7 +5,6 @@ export default {}
 :::warning 注意
 同页面上只会有一个元素获取焦点。
 :::
-
 ## 正常用法
 ```vue
 <template>

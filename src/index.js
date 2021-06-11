@@ -9,6 +9,7 @@ import draggable from './directives/draggable.js';
 import focus from './directives/focus.js';
 import lazyLoad from './directives/lazyLoad.js';
 import limitText from './directives/limitText.js';
+import longpress from './directives/longpress.js';
 import permission from './directives/permission.js';
 import watermarker from './directives/watermarker.js';
 
@@ -22,6 +23,7 @@ const directives = {
   focus,
   lazyLoad,
   limitText,
+  longpress,
   permission,
   watermarker
 }

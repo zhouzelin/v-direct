@@ -11,13 +11,13 @@ class Databus {
         width: 200,
         height: 150,
         font: '16px Microsoft YaHei',
-        textColor: 'rgba(180, 180, 180, o.3)',
+        textColor: 'rgba(180, 180, 180, 0.3)',
         rotate: -30,
         textAlign: 'center',
         textBaseline: 'center'
       }
       this.permission = {
-        list: ['1', '2', '3']
+        list: ['1', '2', '3', '4']
       }
     }
     return instance

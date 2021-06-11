@@ -17,8 +17,17 @@ module.exports = {
       { text: '指南', link: '/guide/' }
     ],
     sidebar: [
-      ['/guide/focus', '获取焦点 focus'],
-      ['/guide/copy', '复制文本 copy']
+      '/guide/clickoutside',
+      '/guide/copy',
+      '/guide/debounce',
+      '/guide/draggable',
+      '/guide/focus',
+      '/guide/lazyLoad',
+      '/guide/limitText',
+      '/guide/longpress',
+      '/guide/permission',
+      '/guide/watermarker',
+      
     ]
   },
   configureWebpack: {
