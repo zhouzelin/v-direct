@@ -1,6 +1,6 @@
 <template>
-  <div :style="{height: '400px'}" v-watermarker="'华锐金融权限所有'">
-    <input name="666" v-permission="'4'">
+  <div :style="{height: '400px'}">
+    <input name="666" v-permission="'4'" v-draggable>
   </div>
 </template>
 
