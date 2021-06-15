@@ -1,17 +1,16 @@
 <template>
-  <div :style="{height: '400px'}">
-    <input name="666" v-permission="'4'" v-draggable>
+  <div v-watermarker="'zery版权所有'" :watermarker-width="150" :watermarker-height="100" :watermarker-rotate="-25" style="height: 600px">
+    <input v-model="content" placeholder="请输入">
+    <button v-copy="content" :copy-success="success">复制</button>
   </div>
 </template>
 
 <script>
 export default {
-  created() {
-    this.$zery.setOption({
-      permission: {
-        list: ['1', '2', '4']
-      }
-    })
+  data() {
+    return {
+      content: '123456'
+    }
   },
   methods: {
     success(v) {

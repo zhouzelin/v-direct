@@ -7,6 +7,7 @@ import copy from './directives/copy.js';
 import debounce from './directives/debounce.js';
 import draggable from './directives/draggable.js';
 import focus from './directives/focus.js';
+import infiniteScroll from './directives/infiniteScroll.js';
 import lazyLoad from './directives/lazyLoad.js';
 import limitText from './directives/limitText.js';
 import longpress from './directives/longpress.js';
@@ -21,6 +22,7 @@ const directives = {
   debounce,
   draggable,
   focus,
+  infiniteScroll,
   lazyLoad,
   limitText,
   longpress,

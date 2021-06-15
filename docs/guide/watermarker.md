@@ -3,66 +3,50 @@
 ## 正常用法
 ```vue
 <template>
-  <div class="background" v-watermarker="'zery版权所用'"></div>
+  <div class="background" v-watermarker="'zery版权所有'"></div>
 </template>
 
 <style scoped>
 .background {
   height: 400px;
-  border: 1px solid #ddd;
 }
 </style>
 ```
 <template>
-  <div class="background" v-watermarker="'zery版权所用'"></div>
+  <div class="background" v-watermarker="'zery版权所有'"></div>
 </template>
 
 <style scoped>
 .background {
   height: 400px;
-  border: 1px solid #ddd;
 }
 </style>
 
-## 特殊设置
-可以通过以下配置自定义水印的样式
-1. 方式一
-```javascript
-import zery from 'vue-directive-zery'
-// 以下为默认值，可以通过修改以下的值修改样式
-zery.setOption({
-  watermarker: {
-    width: 200,
-    height: 150,
-    font: '16px Microsoft YaHei',
-    textColor: 'rgba(180, 180, 180, 0.3)',
-    rotate: -30,
-    textAlign: 'center',
-    textBaseline: 'center'
-  }
-})
-```
-2. 方式二
+## 修改颜色
 ```vue
 <template>
-  <div class="background" v-watermarker="'zery版权所用'"></div>
+  <div class="background" v-watermarker="'zery版权所有'" watermarker-text-color="yellow"></div>
 </template>
 
-<script>
-export default {
-  created() {
-    this.$zery.setOption({
-      watermarker: {
-        width: 200,
-        height: 150,
-        font: '16px Microsoft YaHei',
-        textColor: 'rgba(180, 180, 180, 0.3)',
-        rotate: -30,
-        textAlign: 'center',
-        textBaseline: 'center'
-      }
-    })
-  }
+<style scoped>
+.background {
+  height: 400px;
 }
-</script>
+</style>
+```
+<template>
+  <div class="background" v-watermarker="'zery版权所有'" watermarker-text-color="yellow" ></div>
+</template>
+
+## 属性设置
+|属性名|说明|类型|默认值|可选值|
+|----|----|:----:|----|----|
+|watermarker-width|水印图片的宽度|Number|200|-|
+|watermarker-height|水印图片的高度|Number|150|-|
+|watermarker-font-size|水印图片的字体大小|Number|16|-|
+|watermarker-font-family|水印图片的字体|String|Microsoft YaHei|-|
+|watermarker-text-color|水印图片的文本颜色|String|rgba(180, 180, 180, 0.3)|-|
+|watermarker-text-align|水印图片的文本水平位置|String|center|center, left, right|
+|watermarker-text-baseline|水印图片的文本基线位置|String|center|center, top, bottom|
+|watermarker-rotate|文本旋转角度|Number|-30|-|
 ```
