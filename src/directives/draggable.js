@@ -35,6 +35,7 @@ const draggable = {
       let disx = e.clientX - el.offsetLeft
       let disy = e.clientY - el.offsetTop
       document.ontouchmove = e => {
+        e.preventDefault()
         e = e.targetTouches[0]
         let x = e.clientX - disx
         let y = e.clientY - disy

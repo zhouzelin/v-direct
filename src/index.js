@@ -7,11 +7,14 @@ import copy from './directives/copy.js';
 import debounce from './directives/debounce.js';
 import draggable from './directives/draggable.js';
 import focus from './directives/focus.js';
+import formatter from './directives/formatter.js';
 import infiniteScroll from './directives/infiniteScroll.js';
 import lazyLoad from './directives/lazyLoad.js';
 import limitText from './directives/limitText.js';
 import longpress from './directives/longpress.js';
+import marquee from './directives/marquee.js';
 import permission from './directives/permission.js';
+import textOverflow from './directives/textOverflow.js';
 import watermarker from './directives/watermarker.js';
 
 let databus = new Databus()
@@ -22,11 +25,14 @@ const directives = {
   debounce,
   draggable,
   focus,
+  formatter,
   infiniteScroll,
   lazyLoad,
   limitText,
   longpress,
+  marquee,
   permission,
+  textOverflow,
   watermarker
 }
 
