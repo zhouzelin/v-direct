@@ -1,28 +1,23 @@
 // 复制
-let $value, $success, $empty
+import {getAttr} from '@/utils/utils'
+let $value, $success
 
 const copy = {
   bind(el, binding) {
-    $value = binding.value.text
-    $success = binding.value.success || noop
-    $empty = binding.value.empty || noop
+    $value = getAttr(el, 'copy-text', '')
+    $success = binding.value || noop
     el.addEventListener('click', handler)
   },
   unbind(el) {
     el.removeEventListener('click', handler)
   },
   componentUpdated(el, binding) {
-    $value = binding.value.text
-    $success = binding.value.success || noop
-    $empty = binding.value.empty || noop
+    $value = getAttr(el, 'copy-text', '')
+    $success = binding.value || noop
   }
 }
 
 const handler = () => {
-  if (!$value) {
-    $empty()
-    return
-  }
   const textarea = document.createElement('textarea')
   textarea.readOnly = 'readonly'
   textarea.style.position = 'absolute'

@@ -17,17 +17,20 @@ module.exports = {
       { text: '指南', link: '/guide/' }
     ],
     sidebar: [
-      '/guide/clickoutside',
+      '/guide/clickOutside',
       '/guide/copy',
       '/guide/debounce',
       '/guide/draggable',
+      '/guide/ellipsis',
       '/guide/focus',
+      '/guide/formatter',
+      '/guide/infiniteScroll',
       '/guide/lazyLoad',
       '/guide/limitText',
       '/guide/longpress',
+      '/guide/marquee',
       '/guide/permission',
-      '/guide/watermarker',
-      
+      '/guide/watermarker'
     ]
   },
   configureWebpack: {

@@ -1,11 +1,11 @@
-# 外部点击 clickoutside
+# 外部点击 clickOutside
 1. 被绑定元素被点击之后，再点击其外部会触发一次；
 2. 重复步骤1可以重复触发事件。
 
 ## 正常用法
 ```vue
 <template>
-  <div class="box" v-clickoutside="clickoutside">
+  <div class="box" v-click-outside="clickoutside">
     点一下我，再点外部元素
   </div>
 </template>
@@ -34,7 +34,7 @@ export default {
 </style>
 ```
 <template>
-  <div class="box" v-clickoutside="clickoutside">
+  <div class="box" v-click-outside="clickoutside">
     点一下我，再点外部元素
   </div>
 </template>

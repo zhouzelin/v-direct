@@ -5,7 +5,7 @@
 <template>
   <ul class="container">
     <li v-for="item in 10">
-      <img :key="item" data-src="https://vuepress.vuejs.org/hero.png" v-lazyLoad />
+      <img :key="item" data-src="https://vuepress.vuejs.org/hero.png" v-lazy-load />
     </li>
   </ul>
 </template>
@@ -30,7 +30,7 @@ ul.container li img {
 <template>
   <ul class="container">
     <li v-for="item in 10">
-      <img :key="item" data-src="https://vuepress.vuejs.org/hero.png" v-lazyLoad />
+      <img :key="item" data-src="https://vuepress.vuejs.org/hero.png" v-lazy-load />
     </li>
   </ul>
 </template>

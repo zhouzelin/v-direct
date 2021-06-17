@@ -1,5 +1,5 @@
 # 介绍
-vue-directive-zery是一个vue的自定义指令扩展库，该库包含了一些常用的指令，例如：外部点击`clickoutside`，复制`copy`，防抖`debounce`，获取焦点`focus`，拖动`draggable`等等。减少重复的代码，使前端开发更加高效。
+vue-directive-zery是一个vue的自定义指令扩展库，该库包含了一些常用的指令，例如：外部点击`clickOutside`，复制`copy`，防抖`debounce`，获取焦点`focus`，拖动`draggable`等等。减少重复的代码，使前端开发更加高效。
 
 # 快速上手
 ::: warning 前提条件

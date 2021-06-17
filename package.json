@@ -21,6 +21,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
+    "clamp-js": "^0.7.0",
     "json-templater": "^1.2.0",
     "numeral": "^2.0.6",
     "postcss": "^8.3.4",

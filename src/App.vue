@@ -1,18 +1,23 @@
 <template>
-  <div>
-    <div v-formatter="'0a'" formatter-value="2012090156"></div>
-    <div v-formatter="'YYYY年MM月DD日HH时mm分ss秒'" formatter-value="20191122090856"></div>
+  <div v-infiniteScroll="callbck" style="height: 200px;" :infinite-scroll-distance="20">
+    <ul>
+      <li v-for="item in count" :key="item">{{item}}</li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {}
+    return {
+      count: 20
+    }
   },
   methods: {
-    success(v) {
-      alert(v)
+    callbck(e) {
+      if (this.count <= 100) {
+        this.count += 2
+      }
     }
   }
 }
