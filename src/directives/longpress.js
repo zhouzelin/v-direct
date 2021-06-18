@@ -1,8 +1,11 @@
+import { getAttr } from "../utils/utils"
+let $delay
 const longpress = {
   bind: function (el, binding, vNode) {
     if (typeof binding.value !== 'function') {
       throw 'callback must be a function'
     }
+    $delay = getAttr(el, 'longpress-delay', 2000)
     // 定义变量
     let pressTimer = null
     // 创建计时器（ 2秒后执行函数 ）
@@ -13,7 +16,7 @@ const longpress = {
       if (pressTimer === null) {
         pressTimer = setTimeout(() => {
           handler()
-        }, 2000)
+        }, $delay)
       }
     }
     // 取消计时器
@@ -39,6 +42,7 @@ const longpress = {
   // 当传进来的值更新的时候触发
   componentUpdated(el, { value }) {
     el.$value = value
+    $delay = getAttr(el, 'longpress-delay', 2000)
   },
   // 指令与元素解绑的时候，移除事件绑定
   unbind(el) {
