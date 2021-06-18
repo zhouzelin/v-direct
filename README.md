@@ -17,3 +17,6 @@ Vue custom directive extensions, including long press, copy, watermark, permissi
 ### 1.0.5
 修复了watermarker的textAlgin和textBaseline属性不能正确调整文本位置的问题
 longpress新增了delay属性控制长按时间
+
+### 1.0.6
+修复模块无法引入问题

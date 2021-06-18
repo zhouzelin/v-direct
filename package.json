@@ -1,11 +1,19 @@
 {
   "name": "vue-directive-zery",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "zhouzelin zhouzelinman@qq.com",
   "files": [
     "dist",
     "README.md"
   ],
+  "main": "./dist/vue-directive-zery.umd.js",
+  "module": "./dist/vue-directive-zery.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-directive-zery.es.js",
+      "require": "./dist/vue-directive-zery.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
