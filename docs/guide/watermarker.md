@@ -35,7 +35,7 @@
 </style>
 ```
 <template>
-  <div class="background" v-watermarker="'zery版权所有'" watermarker-text-color="yellow" ></div>
+  <div class="background" v-watermarker="'zery版权所有'" watermarker-text-color="yellow"></div>
 </template>
 
 ## 属性设置
@@ -49,4 +49,3 @@
 |watermarker-text-align|水印图片的文本水平位置|String|center|center, left, right|
 |watermarker-text-baseline|水印图片的文本基线位置|String|center|center, top, bottom|
 |watermarker-rotate|文本旋转角度|Number|-30|-|
-```

@@ -13,3 +13,6 @@ Vue custom directive extensions, including long press, copy, watermark, permissi
 
 ### 1.0.3
 新增了ellipsis，formatter，infiniteScroll，marquee指令，修改了copy的使用方法，lazyload的bug
+
+### 1.0.4
+修复了watermarker的textAlgin和textBaseline属性不能正确调整文本位置的问题

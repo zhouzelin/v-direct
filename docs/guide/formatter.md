@@ -1,6 +1,6 @@
 # 文本格式 formatter
 实现对文本中的时间和数字的格式化
-## 时间格式
+## 格式时间
 支持字符串或时间字符串
 ```vue
 <template>
@@ -26,7 +26,7 @@
   </div>
 </template>
 
-## 数字格式
+## 格式数组
 支持千分位，保留小数点后几位
 ```vue
 <template>
@@ -56,7 +56,7 @@
 |formatter-perfix|文本前缀|String|-|
 |formatter-suffix|文本后缀|String|-|
 
-## 数值格式
+## 数值格式符
 参考[Numeral.js](http://numeraljs.com/)支持的格式化占位符列表
 1. 数字 Numbers
 
@@ -129,7 +129,7 @@
 |12398734.202|`0.00e+0`|1.24e+7|
 |0.000123987|`0.000e+0`|1.240e-4|
 
-## 时间格式
+## 时间格式符
 参考[dayjs](https://dayjs.fenxianglu.cn/category/parse.html)支持的格式化占位符列表
 |标识|示例|描述|
 |----|----|----|----|

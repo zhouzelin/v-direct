@@ -13,9 +13,23 @@ function linetoHump(name) {
 function humptoLine(name) {
 return name.replace(/([A-Z])/g,"-$1").toLowerCase();
 }
+// 深度覆盖
+function overwrite(A, B) {
+  if (B instanceof Object && !Array.isArray(B)) {
+    for(let k in B) {
+      if (A.hasOwnProperty(k)) {
+        A[k] = overwrite(A[k], B[k])
+      }
+    }
+  } else {
+    A = B
+  }
+  return A
+}
 
 export {
   getAttr,
   linetoHump,
-  humptoLine
+  humptoLine,
+  overwrite
 }
