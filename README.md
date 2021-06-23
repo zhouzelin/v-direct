@@ -20,3 +20,6 @@ longpress新增了delay属性控制长按时间
 
 ### 1.0.6
 修复模块无法引入问题
+
+### 1.0.7
+修复marquee的delay属性

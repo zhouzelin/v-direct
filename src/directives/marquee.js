@@ -25,7 +25,7 @@ function handler(el) {
   timer = null
   // 获取属性值
   const scrollAmount = getAttr($el, 'marquee-scroll-amount', 6)
-  const scrollDelay = getAttr($el, 'marquee-scroll-delay', 85)
+  let scrollDelay = getAttr($el, 'marquee-scroll-delay', 85)
   if (scrollDelay < 60) {
     scrollDelay = 60
   }
