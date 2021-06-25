@@ -3,31 +3,28 @@ import numeral from 'numeral'
 import {getAttr} from '@/utils/utils'
 
 // 全局变量
-let $el, $format
 const formatter = {
   bind(el, binding) {
-    $el = el
-    $format = binding.value
-    handler()
+    el.format = binding.value
+    handler(el)
   },
   componentUpdated(el, binding) {
-    $el = el
-    $format = binding.value
-    handler()
+    el.format = binding.value
+    handler(el)
   }
 }
 
-function handler() {
-  const $text = getAttr($el, 'formatter-value', '')
-  const $perfix = getAttr($el, 'formatter-perfix', '')
-  const $suffix = getAttr($el, 'formatter-suffix', '')
+function handler(el) {
+  const $text = getAttr(el, 'formatter-value', '')
+  const $perfix = getAttr(el, 'formatter-perfix', '')
+  const $suffix = getAttr(el, 'formatter-suffix', '')
   let ret = $text
-  if (/\d/.test($format)) {
-    ret = numeral($text).format($format)
+  if (/\d/.test(el.format)) {
+    ret = numeral($text).format(el.format)
   } else {
-    ret = dayjs($text).format($format)
+    ret = dayjs($text).format(el.format)
   }
-  $el.innerText = $perfix + ret + $suffix
+  el.innerText = $perfix + ret + $suffix
 }
 
 export default formatter

@@ -27,9 +27,15 @@ function overwrite(A, B) {
   return A
 }
 
+const emit = (el, name, event) => {
+  const myEvent = new CustomEvent(name, event)
+  el.dispatchEvent(myEvent)
+}
+
 export {
   getAttr,
   linetoHump,
   humptoLine,
-  overwrite
+  overwrite,
+  emit
 }

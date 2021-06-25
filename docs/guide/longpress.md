@@ -35,4 +35,4 @@ export default {
 ## 属性
 |参数名|说明|类型|默认值|可选值|
 |----|----|:----:|:----:|:----|
-|longpress-delay|长按时间，单位ms|2000|-|-|
+|longpress-delay|长按时间，单位ms|Number|2000|-|

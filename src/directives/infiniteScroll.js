@@ -1,50 +1,48 @@
 import {getAttr} from '@/utils/utils'
 // 无限滚动
-let $btm, $callback, $el, $delay, $distance, $disabled
 const infiniteScroll = {
   bind(el) {
     init(el)
   },
   inserted(el, binding) {
-    $callback = binding.value
-    $delay = getAttr(el, 'infinite-scroll-delay', 200)
-    $distance = getAttr(el, 'infinite-scroll-distance', 0)
-    $disabled = getAttr(el, 'infinite-scroll-disabled', false)
-    listenerScroll()
+    el.callback = binding.value
+    el.delay = getAttr(el, 'infinite-scroll-delay', 200)
+    el.distance = getAttr(el, 'infinite-scroll-distance', 0)
+    el.disabled = getAttr(el, 'infinite-scroll-disabled', false)
+    listenerScroll(el)
   },
   componentUpdated(el, binding) {
-    $callback = binding.value
-    $delay = getAttr(el, 'infinite-scroll-delay', 200)
-    $distance = getAttr(el, 'infinite-scroll-distance', 0)
-    $disabled = getAttr(el, 'infinite-scroll-disabled', false)
+    el.callback = binding.value
+    el.delay = getAttr(el, 'infinite-scroll-delay', 200)
+    el.distance = getAttr(el, 'infinite-scroll-distance', 0)
+    el.disabled = getAttr(el, 'infinite-scroll-disabled', false)
   },
   unbind(el) {
     el.removeEventListener('scroll', () => {
-      handler()
+      handler(el)
     })
   }
 }
 
 // 初始化
 function init(el) {
-  $el = el
-  $el.style.overflow = "auto"
+  el.style.overflow = "auto"
 }
 // 监听scroll事件
-function listenerScroll() {
-  const handler = throttle(load, $delay)
-  load($btm)
-  $el.addEventListener('scroll', () => {
+function listenerScroll(el) {
+  const handler = throttle(() => load(el), el.delay)
+  load(el)
+  el.addEventListener('scroll', () => {
     handler()
   })
 }
 // 加载真实图片
-function load() {
-  const clientHeight = $el.clientHeight
-  const scrollHeight = $el.scrollHeight
-  const scrollTop = $el.scrollTop
-  if (scrollHeight - clientHeight - scrollTop <= $distance && !$disabled) {
-    $callback()
+function load(el) {
+  const clientHeight = el.clientHeight
+  const scrollHeight = el.scrollHeight
+  const scrollTop = el.scrollTop
+  if (scrollHeight - clientHeight - scrollTop <= el.distance && !el.disabled) {
+    el.callback()
   }
 }
 // 节流

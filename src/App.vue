@@ -1,8 +1,6 @@
 <template>
-  <div v-infiniteScroll="callbck" style="height: 200px;" :infinite-scroll-distance="20">
-    <ul>
-      <li v-for="item in count" :key="item">{{item}}</li>
-    </ul>
+  <div :style="{height: '600px'}">
+    <button v-draggable @drag-start="dragStart">复制</button>
   </div>
 </template>
 
@@ -10,14 +8,25 @@
 export default {
   data() {
     return {
-      count: 20
+      count: 20,
+      a: ''
     }
   },
   methods: {
-    callbck(e) {
-      if (this.count <= 100) {
-        this.count += 2
-      }
+    copy(v) {
+      console.log(v)
+    },
+    longpress(e) {
+      alert(666)
+    },
+    dragStart(e) {
+      console.log('开始', e)
+    },
+    dragEnd(e) {
+      console.log('结束', e)
+    },
+    drag(e) {
+      console.log('拖动', e)
     }
   }
 }

@@ -1,9 +1,18 @@
 # vue-directive-zery
 Vue custom directive extensions, including long press, copy, watermark, permissions and more.
 
+## 安装
+```bash
+npm install --save vue-directive-zery
+```
+## 引用
+```javascript
+import Vue from 'vue'
+import zery from 'vue-directive-zery'
+Vue.use(zery)
+```
 ## 使用文档
 [vue-directive-zery使用文档](https://zhouzelin.github.io/zery/)
-
 ## 版本
 ### 1.0.0
 新增了clickOutside，copy，debounce，draggable，focus，lazyload，limitText，longpress，permission，watermarker指令
@@ -23,3 +32,7 @@ longpress新增了delay属性控制长按时间
 
 ### 1.0.7
 修复marquee的delay属性
+
+### 1.0.8
+修复clickOutside不能绑定多个元素的错误
+新增marquee的监听事件、属性和方法，新增longpress的dalay属性

@@ -35,8 +35,8 @@
   position: relative;
 }
 .container .box {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   background-color: yellow;
   border-radius: 50%;
 }

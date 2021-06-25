@@ -5,17 +5,22 @@
 ## 正常用法
 ```vue
 <template>
-  <div class="box" v-click-outside="clickoutside">
-    点一下我，再点外部元素
+  <div class="box" v-click-outside="clickoutside1">
+    点一下box1，再点外部
+  </div>
+  <div class="box" v-click-outside="clickoutside2">
+    点一下box2，再点外部
   </div>
 </template>
 
 <script>
 export default {
   methods: {
-    clickoutside(e) {
-      console.log(e)
-      alert('已点了我的外部')
+    clickoutside1(e) {
+      alert('已点了1的外部')
+    },
+    clickoutside2() {
+      alert('已点了2的外部')
     }
   }
 }
@@ -23,8 +28,9 @@ export default {
 
 <style scoped>
 .box {
+  display: inline-block;
   width: 200px;
-  height: 200px;
+  height: 150px;
   color: #fff;
   background-color: purple;
   border-radius: 8px;
@@ -34,17 +40,22 @@ export default {
 </style>
 ```
 <template>
-  <div class="box" v-click-outside="clickoutside">
-    点一下我，再点外部元素
+  <div class="box" v-click-outside="clickoutside1">
+    点一下box1，再点外部
+  </div>
+  <div class="box" v-click-outside="clickoutside2">
+    点一下box2，再点外部
   </div>
 </template>
 
 <script>
 export default {
   methods: {
-    clickoutside(e) {
-      console.log(e)
-      alert('已点了我的外部')
+    clickoutside1(e) {
+      alert('已点了1的外部')
+    },
+    clickoutside2() {
+      alert('已点了2的外部')
     }
   }
 }
@@ -52,12 +63,13 @@ export default {
 
 <style scoped>
 .box {
+  display: inline-block;
   width: 200px;
-  height: 200px;
+  height: 150px;
   color: #fff;
   background-color: purple;
   border-radius: 8px;
-  line-height: 200px;
+  line-height: 150px;
   text-align: center;
 }
 </style>

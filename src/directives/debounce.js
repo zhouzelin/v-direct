@@ -1,23 +1,25 @@
 // 防抖
-let timer, handler
-
-const handlerClick = (e) => {
-  if (timer) {
-    clearTimeout(timer)
-  }
-  timer = setTimeout(() => handler(e), 320)
-}
+import {getAttr} from '@/utils/utils'
 
 const debounce = {
   bind(el, binding) {
-    handler = binding.value
-    el.addEventListener('click', handlerClick)
+    el.timer = null
+    el.handler = binding.value
+    el.delay = getAttr(el, 'debounce-delay', 350)
+    el.handlerClick = (e) => {
+      if (el.timer) {
+        clearTimeout(el.timer)
+      }
+      el.timer = setTimeout(() => el.handler(e), el.delay)
+    }
+    el.addEventListener('click', el.handlerClick)
   },
   componentUpdated(el, binding) {
-    handler = binding.value
+    el.handler = binding.value
+    el.delay = getAttr(el, 'debounce-delay', 350)
   },
   unbind(el) {
-    el.removeEventListener('click', handlerClick)
+    el.removeEventListener('click', el.handlerClick)
   }
 }
 
