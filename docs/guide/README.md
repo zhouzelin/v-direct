@@ -24,7 +24,7 @@ Vue.use(zery)
 ```vue
 <template>
   <input v-model="text" placeholder="请输入">
-  <button v-copy="{text, success}">复制</button>
+  <button v-copy="success" :copy-text="text">复制</button>
 </template>
 
 <script>
@@ -44,7 +44,7 @@ export default {
 ```
 <template>
   <input v-model="text" placeholder="请输入">
-  <button v-copy="{text, success}">复制</button>
+  <button v-copy="success" :copy-text="text">复制</button>
 </template>
 
 <script>

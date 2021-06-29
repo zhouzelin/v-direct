@@ -41,3 +41,10 @@
   border-radius: 50%;
 }
 </style>
+
+## 事件回调
+|事件名称|说明|回调参数|
+|---|---|---|
+|drag-start|拖拽开始。|event|
+|drag|拖拽。|event|
+|drag-end|拖拽结束。|event|

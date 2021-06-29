@@ -3,13 +3,14 @@ import {humptoLine, overwrite} from 'utils/utils'
 // databus
 import Databus from 'utils/databus.js'
 // directives
-import clickOutside from './directives/clickOutside.js';
+import clickoutside from './directives/clickoutside.js';
 import copy from './directives/copy.js';
 import debounce from './directives/debounce.js';
 import draggable from './directives/draggable.js';
 import ellipsis from './directives/ellipsis.js';
 import focus from './directives/focus.js';
 import formatter from './directives/formatter.js';
+import fullScreen from './directives/fullScreen.js';
 import infiniteScroll from './directives/infiniteScroll.js';
 import lazyLoad from './directives/lazyLoad.js';
 import limitText from './directives/limitText.js';
@@ -21,13 +22,14 @@ import watermarker from './directives/watermarker.js';
 let databus = new Databus()
 
 const directives = {
-  clickOutside,
+  clickoutside,
   copy,
   debounce,
   draggable,
   ellipsis,
   focus,
   formatter,
+  fullScreen,
   infiniteScroll,
   lazyLoad,
   limitText,

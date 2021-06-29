@@ -36,3 +36,7 @@ longpress新增了delay属性控制长按时间
 ### 1.0.8
 修复clickOutside不能绑定多个元素的错误
 新增marquee的监听事件、属性和方法，新增longpress的dalay属性
+
+### 1.0.9
+新增fullScreen指令，新增drag的监听事件
+修复ellpsis正常用法不传参报错问题

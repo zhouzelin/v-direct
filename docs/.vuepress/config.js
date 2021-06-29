@@ -14,7 +14,8 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
-      { text: '指南', link: '/guide/' }
+      { text: '指南', link: '/guide/' },
+      { text: 'Github', link: 'https://github.com/zhouzelin/vue-directive-zery/'}
     ],
     sidebar: [
       '/guide/clickOutside',
@@ -24,6 +25,7 @@ module.exports = {
       '/guide/ellipsis',
       '/guide/focus',
       '/guide/formatter',
+      '/guide/fullScreen',
       '/guide/infiniteScroll',
       '/guide/lazyLoad',
       '/guide/limitText',

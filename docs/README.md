@@ -23,6 +23,6 @@ Vue.use(zery)
 ```javascript
 import Vue from 'Vue'
 import zery from 'vue-directive-zery'
-zery.use(['clickoutside', 'watermarker', 'copy', 'debounce', 'limitText'])
+zery.use(['clickOutside', 'watermarker', 'copy', 'debounce', 'limitText'])
 Vue.use(zery)
 ```
