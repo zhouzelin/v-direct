@@ -40,3 +40,10 @@ longpress新增了delay属性控制长按时间
 ### 1.0.9
 新增fullScreen指令，新增drag的监听事件
 修复ellpsis正常用法不传参报错问题
+
+### 1.0.10
+修复clickOutside指令无法解析的问题
+
+### 1.1.0
+新增countDown指令
+修改marquee指令文档

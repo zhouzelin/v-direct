@@ -89,7 +89,6 @@ export default {
       @marquee-bounce="mbounce"
       @marquee-finish="mfinish"
     >《上学歌》，因为它的曲调单一，不知是巧合还是刻意为之，很多人也许不会弹钢琴，但当他在琴键上依次按下基本的音符时，耳边响起的正是这首《上学歌》，然而麻雀虽小五脏俱全或者说可谓微言大义，不是么？</div>
-    <input v-model="loop" v-limit-text="/\D/">
   </div>
 </template>
 
@@ -123,7 +122,7 @@ export default {
 |参数|说明|类型|默认值|可选值|
 |---|---|:---:|:---:|---|
 |marquee-scroll-amount|设置每次滚动时移动的长度（以像素为单位）|Number|6||-|
-|marquee-scroll-delay|设置每次滚动时的时间间隔（以毫秒为单位）。请注意， 除非指定 truespeed 值，否则将忽略任何小于 60 的值，并改为使用 60。|Number|85|-|
+|marquee-scroll-delay|设置每次滚动时的时间间隔（以毫秒为单位）。忽略任何小于 60 的值，并改为使用 60。|Number|85|-|
 |marquee-loop|设置 marquee 滚动的次数。如果未指定值，默认值为 −1，表示 marquee 将连续滚动|Number|-1|-|
 
 ## 事件回调

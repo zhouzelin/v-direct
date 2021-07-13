@@ -3,8 +3,9 @@ import {humptoLine, overwrite} from 'utils/utils'
 // databus
 import Databus from 'utils/databus.js'
 // directives
-import clickoutside from './directives/clickoutside.js';
+import clickOutside from './directives/clickOutside.js';
 import copy from './directives/copy.js';
+import countDown from './directives/countDown.js';
 import debounce from './directives/debounce.js';
 import draggable from './directives/draggable.js';
 import ellipsis from './directives/ellipsis.js';
@@ -22,8 +23,9 @@ import watermarker from './directives/watermarker.js';
 let databus = new Databus()
 
 const directives = {
-  clickoutside,
+  clickOutside,
   copy,
+  countDown,
   debounce,
   draggable,
   ellipsis,

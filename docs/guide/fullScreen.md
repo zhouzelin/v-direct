@@ -3,6 +3,10 @@
 2. 在触发按钮绑定fullScreen指令，并将X作为该指令的参数，例如：v-full-screen:X
 3. 等号后边传入boolean类型的值，true为进入全屏，false为退出全屏，默认为false
 
+::: warning 注意
+只支持PC端，移动端暂不支持
+:::
+
 ## 正常用法
 ```vue
 <template>

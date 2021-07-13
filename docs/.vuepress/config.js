@@ -20,6 +20,7 @@ module.exports = {
     sidebar: [
       '/guide/clickOutside',
       '/guide/copy',
+      '/guide/countDown',
       '/guide/debounce',
       '/guide/draggable',
       '/guide/ellipsis',
