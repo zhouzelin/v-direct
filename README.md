@@ -1,5 +1,6 @@
 # vue-directive-zery
 Vue custom directive extensions, including long press, copy, watermark, permissions and more.
+Vue 自定义指令扩展集合，包括长按，复制，水印，权限控制等等。
 
 ## 安装
 ```bash
@@ -13,6 +14,7 @@ Vue.use(zery)
 ```
 ## 使用文档
 [vue-directive-zery使用文档](https://zhouzelin.github.io/zery/)
+
 ## 版本
 ### 1.0.0
 新增了clickOutside，copy，debounce，draggable，focus，lazyload，limitText，longpress，permission，watermarker指令

@@ -1,17 +1,18 @@
 {
-  "name": "vue-directive-zery",
+  "name": "vue-director",
   "version": "1.1.0",
   "author": "zhouzelin zhouzelinman@qq.com",
   "files": [
     "dist",
     "README.md"
   ],
-  "main": "./dist/vue-directive-zery.umd.js",
-  "module": "./dist/vue-directive-zery.es.js",
+  "license": "MIT",
+  "main": "./dist/v-director.umd.js",
+  "module": "./dist/v-director.es.js",
   "exports": {
     ".": {
-      "import": "./dist/vue-directive-zery.es.js",
-      "require": "./dist/vue-directive-zery.umd.js"
+      "import": "./dist/v-director.es.js",
+      "require": "./dist/v-director.umd.js"
     }
   },
   "keywords": [
@@ -35,6 +36,7 @@
     "@vue/compiler-sfc": "^3.0.5",
     "clamp-js": "^0.7.0",
     "dayjs": "^1.10.5",
+    "element-ui": "^2.15.5",
     "json-templater": "^1.2.0",
     "numeral": "^2.0.6",
     "postcss": "^8.3.4",

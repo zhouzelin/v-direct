@@ -10,6 +10,7 @@ export default {
       }
     }
     el.handlerClick = function handlerClick(e) {
+      e.stopPropagation()
       if (!el.clicked) {
         el.clicked = true
       }
@@ -18,7 +19,7 @@ export default {
     document.addEventListener('click', el.handler)
   },
   unbind(el, binding) {
-    el.clickoutside = binding.value
+    el.removeEventListener('click', el.handlerClick)
     document.removeEventListener('click', el.handler)
   }
 }
