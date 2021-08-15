@@ -41,7 +41,7 @@ const directives = {
   watermarker
 }
 
-const Zery = {
+const zery = {
   use(useList) {
     if (useList) {
       this.useList = useList
@@ -74,4 +74,4 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
-export default Zery
+export default zery

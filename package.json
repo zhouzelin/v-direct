@@ -1,18 +1,18 @@
 {
-  "name": "vue-director",
-  "version": "1.1.0",
+  "name": "vue-directive-zery",
+  "version": "1.1.1",
   "author": "zhouzelin zhouzelinman@qq.com",
   "files": [
-    "dist",
+    "lib",
     "README.md"
   ],
   "license": "MIT",
-  "main": "./dist/v-director.umd.js",
-  "module": "./dist/v-director.es.js",
+  "main": "./lib/vue-directive-zery.umd.js",
+  "module": "./lib/vue-directive-zery.es.js",
   "exports": {
     ".": {
-      "import": "./dist/v-director.es.js",
-      "require": "./dist/v-director.umd.js"
+      "import": "./lib/vue-directive-zery.es.js",
+      "require": "./lib/vue-directive-zery.umd.js"
     }
   },
   "keywords": [
@@ -34,12 +34,15 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
-    "clamp-js": "^0.7.0",
+    "autoprefixer": "^10.3.1",
     "dayjs": "^1.10.5",
     "element-ui": "^2.15.5",
     "json-templater": "^1.2.0",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
     "numeral": "^2.0.6",
-    "postcss": "^8.3.4",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.7",
     "vite": "^2.3.3",
     "vite-plugin-vue2": "^1.5.1",
     "vue": "^2.6.14",

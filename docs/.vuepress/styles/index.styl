@@ -12,6 +12,9 @@ table td {
   height: 35px; /*统一每一行的默认高度*/
   border: 1px solid #dedede; /*内部边框样式*/
   padding: 0 10px; /*内边距*/
+  vertical-align middle;
+  white-space: nowrap;
+  font-size: 14px;
 }
 
 // 表头样式
@@ -22,11 +25,13 @@ table th {
 }
 
 table tbody tr:nth-child(2n) {
-  background: rgba(158,188,226,0.12); 
+  background: rgba(158,188,226,0.12);
 }
 
 table td:nth-child(2) {
   width: 100%;
+  white-space: normal; 
+  line-height: 1.5;
 }
 
 table tr:hover {

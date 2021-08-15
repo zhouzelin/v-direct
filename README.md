@@ -49,3 +49,6 @@ longpress新增了delay属性控制长按时间
 ### 1.1.0
 新增countDown指令
 修改marquee指令文档
+
+### 1.1.1
+修改ellpsis和clickOutside的实现方式

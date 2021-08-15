@@ -31,7 +31,7 @@ Vue.use(zery)
 export default {
   data() {
     return {
-      text: 'zery'
+      text: 'vue-directive-zery'
     }
   },
   methods: {
@@ -54,7 +54,7 @@ Vue.use(zery)
 export default {
   data() {
     return {
-      text: 'zery'
+      text: 'vue-directive-zery'
     }
   },
   methods: {

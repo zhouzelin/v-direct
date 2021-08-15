@@ -1,6 +1,9 @@
 const path = require('path')
 import { defineConfig } from 'vite'
 import { createVuePlugin } from 'vite-plugin-vue2'
+import postcssImport from "postcss-import"
+import autoprefixer from "autoprefixer"
+import tailwindcss from "tailwindcss"
 
 function resolve(_path) {
   return path.resolve(__dirname, _path)
@@ -17,7 +20,16 @@ export default defineConfig({
       'dirs': resolve('src/directives'),
       'routers': resolve('src/routers'),
       'utils': resolve('src/utils'),
-      'assets': resolve('assets')
+      'assets': resolve('src/assets')
+    }
+  },
+  css:{
+    postcss:{
+      plugins:[
+        postcssImport,
+        autoprefixer,
+        tailwindcss
+      ]
     }
   },
   plugins: [
@@ -35,6 +47,7 @@ export default defineConfig({
           vue: 'Vue'
         }
       }
-    }
+    },
+    outDir: 'lib'
   }
 })

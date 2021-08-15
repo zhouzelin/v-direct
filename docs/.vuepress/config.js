@@ -14,8 +14,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
-      { text: '指南', link: '/guide/' },
-      { text: 'Github', link: 'https://github.com/zhouzelin/vue-directive-zery/'}
+      { text: '指南', link: '/guide/' }
     ],
     sidebar: [
       '/guide/clickOutside',
@@ -46,7 +45,7 @@ module.exports = {
         'dirs': resolve('../../src/directives'),
         'routers': resolve('../../src/routers'),
         'utils': resolve('../../src/utils'),
-        'assets': resolve('../../assets')
+        'assets': resolve('../../src/assets')
       }
     }
   }

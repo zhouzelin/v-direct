@@ -1,4 +1,3 @@
-import clamp from "clamp-js"
 // 文本多行溢出
 const ellipsis = {
   bind(el, binding) {
@@ -11,12 +10,14 @@ const ellipsis = {
 
 function handler(el, binding) {
   const line = binding.value || 1
+  el.style.overflow = 'hidden'
+  el.style.textOverflow = 'ellipsis'
   if (line === 1) {
-    el.style.overflow = 'hidden'
-    el.style.textOverflow = 'ellipsis'
     el.style.whiteSpace = 'nowrap'
   } else {
-    clamp(el, {clamp: line})
+    el.style.WebkitBoxOrient = 'vertical'
+    el.style.display = '-webkit-box'
+    el.style.WebkitLineClamp = line
   }
 }
 
