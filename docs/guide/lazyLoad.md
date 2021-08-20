@@ -57,8 +57,8 @@ ul.container li img {
 1. 方式一
 ```javascript
 // main.js
-import zery from 'vue-directive-zery'
-zery.setOption({
+import direct from 'v-direct'
+direct.setOption({
   lazyLoad: {
     default: 'xxxx.png'
   }
@@ -69,7 +69,7 @@ zery.setOption({
 <script>
 export default {
   created() {
-    this.$zery.setOption({
+    this.$direct.setOption({
       lazyLoad: {
         default: 'xxxx.png'
       }

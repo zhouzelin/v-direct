@@ -1,24 +1,24 @@
 # 介绍
-vue-directive-zery是一个vue的自定义指令扩展库，该库包含了一些常用的指令，例如：外部点击`clickOutside`，复制`copy`，防抖`debounce`，获取焦点`focus`，拖动`draggable`等等。减少重复的代码，使前端开发更加高效。
+v-direct(原名vue-directive-zery)是一个vue的自定义指令扩展库，该库包含了一些常用的指令，例如：外部点击`clickOutside`，复制`copy`，防抖`debounce`，获取焦点`focus`，拖动`draggable`等等。减少重复的代码，使前端开发更加高效。
 
 # 快速上手
 ::: warning 前提条件
-vue-directive-zery 需要 Node.js (opens new window)>= 8.6，目前只支持vue版本为2.x。
+v-direct 需要 Node.js (opens new window)>= 8.6，目前只支持vue版本为2.x。
 :::
 1. 安装
 在控制台中执行以下指令
 ```bash
-npm i -S vue-directive-zery
+npm i -S v-direct
 // or
-yarn add vue-directive-zery
+yarn add v-direct
 ```
 2. 引入依赖包
-依赖于vue，引入vue和vue-directive-zery
+依赖于vue，引入vue和v-direct
 ```javascript
 // main.js
 import Vue from 'vue'
-import zery from 'vue-directive-zery'
-Vue.use(zery)
+import direct from 'v-direct'
+Vue.use(direct)
 ```
 3. 使用
 ```vue
@@ -31,7 +31,7 @@ Vue.use(zery)
 export default {
   data() {
     return {
-      text: 'vue-directive-zery'
+      text: 'v-direct'
     }
   },
   methods: {
@@ -49,12 +49,12 @@ export default {
 
 <script>
 import Vue from 'vue'
-import zery from '@/index.js'
-Vue.use(zery)
+import direct from '@/index.js'
+Vue.use(direct)
 export default {
   data() {
     return {
-      text: 'vue-directive-zery'
+      text: 'v-direct'
     }
   },
   methods: {
@@ -67,6 +67,6 @@ export default {
 
 ## 防止冲突，按需加载
 ```javascript
-zery.use(['watermarker', 'copy', 'longpress'])
-Vue.use(zery)
+direct.use(['watermarker', 'copy', 'longpress'])
+Vue.use(direct)
 ```

@@ -38,7 +38,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve('src/index.js'),
-      name: 'vue-directive-zery'
+      name: 'v-direct'
     },
     rollupOptions: {
       external: ['vue'],

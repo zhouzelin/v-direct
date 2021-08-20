@@ -19,7 +19,7 @@ const directives = {
 {{install}}
 }
 
-const zery = {
+const dirct = {
   use(useList) {
     if (useList) {
       this.useList = useList
@@ -36,7 +36,7 @@ const zery = {
         throw new Error('不存在该指令')
       }
     })
-    Vue.prototype.$zery = this
+    Vue.prototype.$dirct = this
   },
   setOption(options) {
     if (options instanceof Object && !Array.isArray(options)) {
@@ -52,7 +52,7 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
-export default zery
+export default dirct
 `
 const directives = fs.readdirSync('src/directives')
 
