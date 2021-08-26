@@ -1,18 +1,18 @@
 {
-  "name": "v-direct",
-  "version": "1.0.0",
+  "name": "vue-directive-zery",
+  "version": "1.1.2",
   "author": "zhouzelin zhouzelinman@qq.com",
   "files": [
     "lib",
     "README.md"
   ],
   "license": "MIT",
-  "main": "./lib/v-direct.umd.js",
-  "module": "./lib/v-direct.es.js",
+  "main": "./lib/vue-directive-zery.umd.js",
+  "module": "./lib/vue-directive-zery.es.js",
   "exports": {
     ".": {
-      "import": "./lib/v-direct.es.js",
-      "require": "./lib/v-direct.umd.js"
+      "import": "./lib/vue-directive-zery.es.js",
+      "require": "./lib/vue-directive-zery.umd.js"
     }
   },
   "keywords": [

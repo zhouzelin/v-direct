@@ -13,7 +13,7 @@
 export default {
   data() {
     return {
-      content: 'Hello v-direct!'
+      content: 'Hello vue-directive-zery!'
     }
   },
   methods: {
@@ -40,7 +40,7 @@ export default {
 export default {
   data() {
     return {
-      content: 'Hello v-direct!'
+      content: 'Hello vue-directive-zery!'
     }
   },
   methods: {

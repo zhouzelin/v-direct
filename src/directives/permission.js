@@ -12,7 +12,8 @@ const permission = function (el, binding) {
     let hasPermission = checkArray(permission)
     if (!hasPermission) {
       // 没有权限 移除Dom元素
-      el.parentNode && el.parentNode.removeChild(el)
+      // el.parentNode && el.parentNode.removeChild(el)
+      el.style.display = 'none'
     }
   }
 }

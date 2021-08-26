@@ -23,8 +23,8 @@
 设置权限列表
 1. 方式一
 ```javascript
-import direct from 'v-direct'
-direct.setOption({
+import zery from 'vue-directive-zery'
+zery.setOption({
   permission: {
     list: ['A', 'B', 'C', 'D']
   }
@@ -43,7 +43,7 @@ direct.setOption({
 <script>
 export default {
   created() {
-    this.$direct.setOption({
+    this.$zery.setOption({
       permission: {
         list: ['A', 'B', 'C', 'D']
       }
